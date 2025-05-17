@@ -21,5 +21,20 @@ namespace MyWPFLearning.ViewModels
             set => Set(ref _title, value);
         }
         #endregion
+
+
+        #region Status: string - Статус бар
+        /// <summary> Статус бар </summary>
+        private string _Status;
+				/// <summary> Статус бар </summary>
+				public string Status
+        {
+            get => _Status;
+            set => Set(ref _Status, value);
+        }
+        #endregion
+
+
+
     }
 }
