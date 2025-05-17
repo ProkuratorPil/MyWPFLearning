@@ -19,6 +19,11 @@
                  Text="{Binding Path=Title, UpdateSourceTrigger=PropertyChanged}" 
                  VerticalAlignment="Top" 
                  Width="120"/>
+        <Button Content="Выход" 
+                HorizontalAlignment="Left" 
+                Margin="637,81,0,0" 
+                VerticalAlignment="Top"
+                Command="{Binding Path=CloseApplicationCommand}"/>
 
     </Grid>
 </Window>

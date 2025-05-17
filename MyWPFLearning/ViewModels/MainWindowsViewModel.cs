@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
+using MyWPFLearning.Infrasturcture.Commands;
 using MyWPFLearning.ViewModels.Base;
 
 namespace MyWPFLearning.ViewModels
@@ -33,6 +36,31 @@ namespace MyWPFLearning.ViewModels
             set => Set(ref _Status, value);
         }
         #endregion
+
+        #region Команды
+        
+        #region CloseApplicationCommand
+
+        public ICommand CloseApplicationCommand { get; }
+
+        private bool CanCloseApplicationCommandExecute(object p) => true;
+
+        private void OnCloseApplicationCommandExecuted(object p)
+        {
+            Application.Current.Shutdown();
+        }
+
+        #endregion
+
+        #endregion
+
+        public MainWindowsViewModel()
+        {
+            #region Команды
+
+            CloseApplicationCommand = new RelayCommand(OnCloseApplicationCommandExecuted, CanCloseApplicationCommandExecute);
+            #endregion
+        }
 
 
 
