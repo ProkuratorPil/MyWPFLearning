@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAppConsole", "MyAppConsol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWPFTest", "MyWPFTest\MyWPFTest.csproj", "{C6F66BB3-C538-4E30-9D29-8EEDED2E77D3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8DF9FFAF-91E9-485F-8E69-E1C058B3023A} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
+		{C6F66BB3-C538-4E30-9D29-8EEDED2E77D3} = {36D591C7-65C7-A0D1-1CBC-10CDE441BDC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40D8F00E-4551-4AE9-822D-77B6D773D1FA}
